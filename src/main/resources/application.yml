@@ -1,0 +1,26 @@
+spotify:
+  baseUrl: https://api.spotify.com
+  token:
+    baseUrl: https://accounts.spotify.com
+    username: ed043c4bf46f438ab39b449d41036a3b
+    password: ${SPOTIFY_TOKEN_PASSWORD}
+    refresh: ${SPOTIFY_TOKEN_REFRESH}
+
+goodreads:
+  baseUrl: https://www.goodreads.com
+  key: ${GOODREADS_KEY}
+  userId: 3065136
+
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+
+logging:
+  level:
+    web: DEBUG
+    org:
+      springframework:
+        web:
+          client:
+            RestTemplate: DEBUG

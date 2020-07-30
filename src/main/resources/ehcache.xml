@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns='http://www.ehcache.org/v3'>
+    <cache alias="accessTokens">
+        <key-type>java.lang.String</key-type>
+        <value-type>java.lang.String</value-type>
+        <expiry>
+            <ttl>3000</ttl>
+        </expiry>
+        <resources>
+            <heap unit="kB">10</heap>
+        </resources>
+    </cache>
+    <cache alias="profile">
+        <key-type>java.lang.String</key-type>
+        <value-type>dev.kurniawan.profile.domains.Profile</value-type>
+        <expiry>
+            <ttl unit="minutes">5</ttl>
+        </expiry>
+        <resources>
+            <heap unit="kB">10</heap>
+        </resources>
+    </cache>
+</config>
